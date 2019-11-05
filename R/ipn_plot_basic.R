@@ -27,8 +27,6 @@ ipn_style_basic <- function(fl = 6, size = 16, position = "right", grid = 0){
     grid_var <- ifelse(grid == 1, grey,"white")
 
     ggplot2::theme(
-
-
       #Legend format
       #This sets the position and alignment of the legend, removes a title and backround for it and sets the requirements for any text within the legend. The legend may often need some more manual tweaking when it comes to its exact position based on the plot coordinates.
       legend.position = position,

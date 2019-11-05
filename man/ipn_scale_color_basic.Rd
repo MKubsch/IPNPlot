@@ -9,7 +9,7 @@ ipn_scale_color_basic(fl = 6, name, labels)
 \arguments{
 \item{fl}{set Forschungslinie, default set to "6" which is IPN blue}
 
-\item{name}{set sclae name}
+\item{name}{set scale name}
 
 \item{labels}{set scale labels}
 }

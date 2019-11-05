@@ -2,7 +2,7 @@
 #'
 #'
 #' @param fl set Forschungslinie, default set to "6" which is IPN blue
-#' @param name set sclae name
+#' @param name set scale name
 #' @param labels set scale labels
 #' @keywords
 #' @export
