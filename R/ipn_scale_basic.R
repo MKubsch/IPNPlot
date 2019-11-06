@@ -7,10 +7,10 @@
 #' @keywords
 #' @export
 #' @examples
-#' ipn_scale_color_basic( fl = 2 name = c("example scale"), labels = c("A","B"))
+#' scale_color_ipn( fl = 2 name = c("example scale"), labels = c("A","B"))
 #'
 
-ipn_scale_color_basic <- function(fl = 6, name ,labels ) {
+scale_color_ipn <- function(fl = 6, name ,labels ) {
   #colors
   ipn <- ("#032c69")
   grey <- ("#808080")
@@ -30,10 +30,10 @@ ipn_scale_color_basic <- function(fl = 6, name ,labels ) {
 #' @keywords
 #' @export
 #' @examples
-#' ipn_scale_fill_basic( fl = 2 name = c("example scale"), labels = c("A","B"))
+#' scale_fill_ipn( fl = 2 name = c("example scale"), labels = c("A","B"))
 #'
 
-ipn_scale_fill_basic <- function(fl = 6, name ,labels  ) {
+scale_fill_ipn <- function(fl = 6, name ,labels  ) {
   #colors
   ipn <- ("#032c69")
   grey <- ("#808080")

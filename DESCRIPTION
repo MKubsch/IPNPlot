@@ -3,9 +3,8 @@ Type: Package
 Title: Apply IPN Layout to ggplot plots
 Version: 0.1.0
 Author: Marcus Kubsch
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: Apply IPN coorporate design to ggplot graphs
+License: CC-BY
 Encoding: UTF-8
 LazyData: true
 Imports: 

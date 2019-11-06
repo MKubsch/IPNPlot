@@ -8,11 +8,11 @@
 #' @keywords
 #' @export
 #' @examples
-#' ipn_style_basic(fl = 6, size = 16, position = "right", grid = 0)
+#' ipn_style(fl = 6, size = 16, position = "right", grid = 0)
 #'
 
 
-ipn_style_basic <- function(fl = 6, size = 16, position = "right", grid = 0){
+ipn_style <- function(fl = 6, size = 16, position = "right", grid = 0){
   if(fl > 6 | fl < 1){print("fl must be in range 1 to 6")}
   else{
     showtext::showtext_auto()
