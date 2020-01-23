@@ -24,7 +24,7 @@ ipn_style <- function(fl = 6, size = 16, position = "right", grid = 0, transpare
     #colors
     ipn <- "#032c69"
     grey <- "#808080"
-    FL <- c("#bcb939", "#83334c", "#cc7119", "#32756b", "#485b7e","#032c69")
+    FL <- c("#bcb939", "#83334c", "#cc7119", "#32756b", "#485b7e","#032c69") # FL1 color "#bcb939"
     grid_var <- ifelse(transparent == 1 & grid == 0, "transparent", ifelse(grid == 1, grey,"white"))
     trans <- ifelse(transparent == 1, "transparent", "white")
 
