@@ -55,7 +55,7 @@ ipn_style <- function(fl = 5, size = 16, position = "right", grid = 0, transpare
                                         color=color_black),
       axis.text.x = ggplot2::element_text(margin=ggplot2::margin(t = 5, b = 10)),
       axis.text.y = ggplot2::element_text(margin=ggplot2::margin(r = 5, l = 10)),
-      axis.ticks = ggplot2::element_line(color = color_black),
+      axis.ticks = ggplot2::element_line(color = color_black, size = line_size, lineend = "round"),
       axis.line = ggplot2::element_line(color = color_black, size = line_size, lineend = "round"),
 
       #Grid lines
@@ -67,11 +67,8 @@ ipn_style <- function(fl = 5, size = 16, position = "right", grid = 0, transpare
 
       #Blank background
       #This sets the panel background as blank, removing the standard grey ggplot background colour from the plot
-      panel.background = ggplot2::element_rect(fill=trans),
-      plot.background =  ggplot2::element_rect(fill=trans)
-
-      #rect(fill = "#f2f2f2", colour = "#f2f2f2",
-      #                                      size = 2, linetype = "dotted")
+      panel.background = ggplot2::element_rect(fill=trans, colour = NA, size =  NA ),
+      plot.background =  ggplot2::element_rect(fill=trans, colour = NA, size = NA )
 
 
     )
