@@ -10,12 +10,12 @@
 #' scale_color_ipn( fl = 2 name = c("example scale"), labels = c("A","B"))
 #'
 
-scale_color_ipn <- function(fl = 6, name ,labels ) {
+scale_color_ipn <- function(fl = 5, name ,labels ) {
   #colors
   ipn <- ("#032c69")
   grey <- ("#808080")
-  FL <- c("#bcb939", "#83334c", "#cc7119", "#32756b", "#485b7e","#032c69") # fl 1 color "#bcb939",
-  FL_selected <- c(FL[fl],FL[fl+2])
+  FL <- c("#83334c", "#cc7119", "#32756b", "#485b7e","#032c69") # fl 1 color "#bcb939",
+  FL_selected <- c(FL[fl],FL[fl+2],FL[-c(fl,fl+2)])
 
   ggplot2::scale_color_manual(values=FL_selected, name = name , labels = labels)
 
@@ -33,12 +33,12 @@ scale_color_ipn <- function(fl = 6, name ,labels ) {
 #' scale_fill_ipn( fl = 2 name = c("example scale"), labels = c("A","B"))
 #'
 
-scale_fill_ipn <- function(fl = 6, name ,labels  ) {
+scale_fill_ipn <- function(fl = 5, name ,labels  ) {
   #colors
   ipn <- ("#032c69")
   grey <- ("#808080")
-  FL <- c("#bcb939","#83334c", "#cc7119", "#32756b", "#485b7e","#032c69") # fl 1 color "#bcb939",
-  FL_selected <- c(FL[fl],FL[fl+2])
+  FL <- c("#83334c", "#cc7119", "#32756b", "#485b7e","#032c69") # fl 1 color "#bcb939",
+  FL_selected <- c(FL[fl],FL[fl+2],FL[-c(fl,fl+2)])
 
   ggplot2::scale_fill_manual(values=FL_selected, name = name , labels = labels)
 

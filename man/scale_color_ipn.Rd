@@ -4,7 +4,7 @@
 \alias{scale_color_ipn}
 \title{IPN Color palette scale: color}
 \usage{
-scale_color_ipn(fl = 6, name, labels)
+scale_color_ipn(fl = 5, name, labels)
 }
 \arguments{
 \item{fl}{set Forschungslinie, default set to "6" which is IPN blue}

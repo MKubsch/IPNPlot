@@ -4,8 +4,8 @@
 \alias{ipn_style}
 \title{IPN theme uses IPN font, colors, and larger text size}
 \usage{
-ipn_style(fl = 6, size = 16, position = "right", grid = 0,
-  transparent = 0)
+ipn_style(fl = 5, size = 16, position = "right", grid = 0,
+  transparent = 0, black = 0, line_size = 1)
 }
 \arguments{
 \item{fl}{set Forschungslinie, default set to "6" which is IPN blue}
@@ -17,11 +17,15 @@ ipn_style(fl = 6, size = 16, position = "right", grid = 0,
 \item{grid}{show grid, default is 0 for no grid, set to 1 for grid}
 
 \item{transparent}{transparent background, default is 0 for white background, set to 1 for transparent background}
+
+\item{black}{color of text, default is 0 for grey, set to 1 for black}
+
+\item{line_size}{specify line size, default is one}
 }
 \description{
 IPN theme uses IPN font, colors, and larger text size
 }
 \examples{
-ipn_style(fl = 6, size = 16, position = "right", grid = 0, transparent = 0)
+ipn_style(fl = 5, size = 16, position = "right", grid = 0, transparent = 0, black = 0)
 
 }
