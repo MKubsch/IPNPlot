@@ -16,7 +16,7 @@
 
 
 ipn_style <- function(fl = 5, size = 16, position = "right", grid = 0, transparent = 0, black = 0, line_size = 1){
-  if(fl > 6 | fl < 1){print("fl must be in range 1 to 6")}
+  if(fl > 6 | fl < 1){print("fl must be in range 1 to 5")}
   else{
     showtext::showtext_auto()
 
@@ -27,6 +27,7 @@ ipn_style <- function(fl = 5, size = 16, position = "right", grid = 0, transpare
     ipn <- "#032c69"
     color_black <- ifelse(black == 0, "#808080", "black")
     FL <- c("#83334c", "#cc7119", "#32756b", "#485b7e","#032c69") # FL1 color "#bcb939"
+    color_FL <- ifelse(black == 0, FL[fl], "black")
     grid_var <- ifelse(transparent == 1 & grid == 0, "transparent", ifelse(grid == 1, grey,"white"))
     trans <- ifelse(transparent == 1, "transparent", "white")
 
@@ -49,7 +50,7 @@ ipn_style <- function(fl = 5, size = 16, position = "right", grid = 0, transpare
       #This sets the text font, size and colour for the axis test, as well as setting the margins and removes lines and ticks. In some cases, axis lines and axis ticks are things we would want to have in the chart - the cookbook shows examples of how to do so.
       axis.title = ggplot2::element_text(family=font,
                                          size=size,
-                                         color=color_black),
+                                         color=color_FL),
       axis.text = ggplot2::element_text(family=font,
                                         size=size,
                                         color=color_black),
